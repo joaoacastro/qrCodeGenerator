@@ -18,12 +18,16 @@
     <link rel="stylesheet" href="src/style/reset.css" />
   </head>
   <body>
-    <h1>QR Code Generator</h1>
-
-    <input type="text" id="inputText" placeholder="Enter text or URL" />
-    <button onclick="generateQRCode()">Generate QR Code</button>
-
-    <div id="qrcode"></div>
+    <div class="container">
+        <div class="body">
+            <h1> _QR Code Generator_</h1>
+        
+            <input type="text" id="inputText" placeholder="Enter text or URL" />
+            <button onclick="generateQRCode()">Generate QR Code</button>
+        
+            <div id="qrcode"></div>
+        </div>
+    </div>
 
     <!-- QRCode.js library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>

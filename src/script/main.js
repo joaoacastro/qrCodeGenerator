@@ -1,21 +1,23 @@
 function generateQRCode() {
-    
-    
-    document.getElementById("qrcode").innerHTML = ""; // Limpar o QR Code anterior
+  const bgColor = document.getElementById("bg-color").value;
+  const qrcodeColor = document.getElementById("qrcode-color").value;
+  const qrcodeSize =  document.getElementById("qrcode-size").value;
 
-    var inputText = document.getElementById("inputText").value; // obtem o que foi digitado
+  document.getElementById("qrcode").innerHTML = ""; // Limpar o QR Code anterior
 
-    if (inputText.trim() === ""){
-        alert("Por favor, insira algum texto ou URL.")
-        return;
-    }
+  var inputText = document.getElementById("inputText").value; // obtem o que foi digitado
 
-    var qrCode = new QRCode(document.getElementById("qrcode"), {
-        text: inputText,
-        width: 256,
-        height: 256,
-        colorDark: "#000000",
-        colorLight: "#ffffff",
-        correctLevel: QRCode.CorrectLevel.H // Níivel de correção de erro
-    })
+  if (inputText.trim() === "") {
+    alert("Por favor, insira algum texto ou URL.");
+    return;
+  }
+
+  var qrCode = new QRCode(document.getElementById("qrcode"), {
+    text: inputText,
+    width: qrcodeSize,
+    height: qrcodeSize,
+    colorDark: qrcodeColor,
+    colorLight: bgColor,
+    correctLevel: QRCode.CorrectLevel.H, // Níivel de correção de erro
+  });
 }

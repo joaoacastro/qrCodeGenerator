@@ -8,12 +8,13 @@
   color: #ffffff;
 }
 
-body{
+body {
   background-image: url("/src/img/bg.jpg");
   background-size: 100vw;
 }
 
-html,body{
+html,
+body {
   height: 100%;
   margin: 0;
   display: flex;
@@ -27,6 +28,7 @@ input {
   width: 25vw;
   margin-bottom: 20px;
   border-radius: 20px;
+  color: #000000;
 }
 
 input[type="color"] {
@@ -40,8 +42,18 @@ input[type="color"] {
   -webkit-appearance: none; /* Remove o estilo padrão no Chrome/Safari */
 }
 
-footer{
+footer {
   text-align: end;
   color: #0077ff;
   padding-right: 15px;
+}
+
+.resetButton,
+.generateButton {
+  transition: box-shadow .2s;
+}
+
+.resetButton:hover,
+.generateButton:hover {
+  box-shadow: 10px 10px 5px #000000;
 }

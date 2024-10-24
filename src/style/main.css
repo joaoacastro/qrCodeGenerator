@@ -29,34 +29,65 @@ h1 {
   text-align: center;
 }
 
-h1:hover{
-    cursor: pointer;
+h1:hover {
+  cursor: pointer;
 }
 
-.qrCodeColor{
+.inputText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-left: 50px; */
+}
+
+.qrCodeColor {
   display: flex;
   padding: 20px;
 }
 
 .bg-color,
-.qrcode-color{
+.qrcode-color {
   width: 10vw;
   height: 7vh;
 }
 
 .container-qrCode-Size,
 .container-bg-color,
-.container-qrcode-color{
+.container-qrcode-color {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 20px;
 }
 
-.qrCodeSize{
+.container-bg-color{
+  padding-right: 10px;
+}
+
+.container-qrcode-color{
+  padding-left: 10px;
+}
+
+.qrCodeSize {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.qrCode {
+  margin-top: 40px;
+  transition: box-shadow .2s;
+  border-radius: 10px;
+}
+
+.qrCode:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 10px #000000;
+  border-radius: 10px;
+  
+}
+
+.resetButton {
+  display: none;
 }

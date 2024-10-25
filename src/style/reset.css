@@ -10,7 +10,7 @@
 
 body {
   background-image: url("/src/img/bg.png");
-  background-size: 100vw;
+  background-size: cover;
 }
 
 html,

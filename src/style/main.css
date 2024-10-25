@@ -60,11 +60,11 @@ h1:hover {
   align-items: center;
 }
 
-.container-bg-color{
+.container-bg-color {
   padding-right: 10px;
 }
 
-.container-qrcode-color{
+.container-qrcode-color {
   padding-left: 10px;
 }
 
@@ -77,15 +77,14 @@ h1:hover {
 
 .qrCode {
   margin-top: 40px;
-  transition: box-shadow .2s;
+  transition: box-shadow 0.2s;
   border-radius: 10px;
 }
 
-.qrCode:hover{
+.qrCode:hover {
   cursor: pointer;
   box-shadow: 0px 0px 0px 10px #000000;
   border-radius: 10px;
-  
 }
 
 .clickToSave,
@@ -93,7 +92,22 @@ h1:hover {
   display: none;
 }
 
-.clickToSave{
+.clickToSave {
   justify-content: center;
   padding: 10px;
+}
+
+@media (max-width: 800px) {
+  .container_box {
+    width: 80vw;
+  }
+  input{
+    width: 40vw;
+  }
+}
+
+@media (max-width: 600px) {
+  h1{
+    font-size: 30px;
+  }
 }

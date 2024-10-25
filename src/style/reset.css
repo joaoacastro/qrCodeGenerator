@@ -10,7 +10,8 @@
 
 body {
   height: 100%;
-  background-image: url("../img/bg.png");
+  /* background-image: url("/src/img/bg.png") */
+  background-image: url("https://raw.githubusercontent.com/joaoacastro/qrCodeGenerator/refs/heads/main/src/img/bg.png");
   background-size: cover;
 }
 

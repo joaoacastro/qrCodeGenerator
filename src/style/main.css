@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px;
   padding: 20px;
   flex: 1;
 }
@@ -101,13 +102,13 @@ h1:hover {
   .container_box {
     width: 80vw;
   }
-  input{
-    width: 40vw;
+  input {
+    width: 50vw;
   }
 }
 
 @media (max-width: 600px) {
-  h1{
+  h1 {
     font-size: 30px;
   }
 }

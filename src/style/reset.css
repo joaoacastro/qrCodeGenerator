@@ -8,8 +8,9 @@
   color: #ffffff;
 }
 
-body {
-  background-image: url("/src/img/bg.png");
+.container_body {
+  height: 100%;
+  background-image: url("../img/bg.png");
   background-size: cover;
 }
 

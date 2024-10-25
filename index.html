@@ -28,73 +28,75 @@
     <link rel="stylesheet" href="src/style/main.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="container_box">
-        <div class="title">
-          <a onclick="window.location.reload()">
-            <h1>QR Code Generator</h1>
-          </a>
-        </div>
-        <div class="body">
-         <div id="label">
-            <input type="text" id="inputText" class="inputText" placeholder="Enter text or URL" />
-
-            <div class="qrCodeSize">
-              <div class="container-qrCode-Size">
-                <label for="">Size: (px)</label>
-                <input type="number" placeholder="256" id="qrcode-size" value="256"/>
+    <div class="container_body">
+      <div class="container">
+        <div class="container_box">
+          <div class="title">
+            <a onclick="window.location.reload()">
+              <h1>QR Code Generator</h1>
+            </a>
+          </div>
+          <div class="body">
+           <div id="label">
+              <input type="text" id="inputText" class="inputText" placeholder="Enter text or URL" />
+  
+              <div class="qrCodeSize">
+                <div class="container-qrCode-Size">
+                  <label for="">Size: (px)</label>
+                  <input type="number" placeholder="256" id="qrcode-size" value="256"/>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="qrCodeColor" id="qrCodeColor">
-            <div class="container-bg-color">
-              <label for="">Background</label>
-              <input
-                type="color"
-                name="bg-color"
-                class="bg-color"
-                id="bg-color"
-                value="#ffffff"
-              />
+  
+            <div class="qrCodeColor" id="qrCodeColor">
+              <div class="container-bg-color">
+                <label for="">Background</label>
+                <input
+                  type="color"
+                  name="bg-color"
+                  class="bg-color"
+                  id="bg-color"
+                  value="#ffffff"
+                />
+              </div>
+  
+              <div class="container-qrcode-color">
+                <label for="">QRCode</label>
+                <input
+                  type="color"
+                  name="qrcode-color"
+                  class="qrcode-color"
+                  id="qrcode-color"
+                />
+              </div>
             </div>
-
-            <div class="container-qrcode-color">
-              <label for="">QRCode</label>
-              <input
-                type="color"
-                name="qrcode-color"
-                class="qrcode-color"
-                id="qrcode-color"
-              />
+  
+            <div id="generateQrCode" class="generateButton">
+              <button
+                id="generateQRCode"
+                type="button"
+                class="btn btn-primary btn-lg btn-block"
+                onclick="generateQRCode()"
+              >
+                Generate QR Code
+              </button>
             </div>
+            
+  
+            <div id="resetButton" class="resetButton">
+              <button
+                type="button"
+                class="btn btn-primary btn-lg btn-block"
+                onclick="window.location.reload()"
+              >
+                Reset QR Code
+              </button>
+            </div>
+            <a id="saveQrCode">
+              <div id="qrcode" class="qrCode"></div> 
+              <span class="clickToSave" id="clickToSave">click to save</span>
+            </a>
           </div>
-
-          <div id="generateQrCode" class="generateButton">
-            <button
-              id="generateQRCode"
-              type="button"
-              class="btn btn-primary btn-lg btn-block"
-              onclick="generateQRCode()"
-            >
-              Generate QR Code
-            </button>
-          </div>
-          
-
-          <div id="resetButton" class="resetButton">
-            <button
-              type="button"
-              class="btn btn-primary btn-lg btn-block"
-              onclick="window.location.reload()"
-            >
-              Reset QR Code
-            </button>
-          </div>
-          <a id="saveQrCode">
-            <div id="qrcode" class="qrCode"></div> 
-            <span class="clickToSave" id="clickToSave">click to save</span>
-          </a>
         </div>
       </div>
     </div>

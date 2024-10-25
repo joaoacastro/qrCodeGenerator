@@ -10,7 +10,7 @@
   width: 40vw;
   height: 80vh;
   border: 2px solid #0077ff;
-  background-color: rgba(136, 136, 136, 0.7);
+  background-color: rgba(136, 136, 136, 0.9);
   border-radius: 20px;
 }
 
@@ -88,6 +88,12 @@ h1:hover {
   
 }
 
+.clickToSave,
 .resetButton {
   display: none;
+}
+
+.clickToSave{
+  justify-content: center;
+  padding: 10px;
 }

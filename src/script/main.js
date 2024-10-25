@@ -31,6 +31,7 @@ const state = {
     color: document.getElementById("qrCodeColor"),
     generateButton: document.getElementById("generateQRCode"),
     resetButton: document.getElementById("resetButton"),
+    clickToSave: document.getElementById("clickToSave"),
   },
 };
 
@@ -42,6 +43,7 @@ function hiddenLabelAndColor() {
 function changeButton() {
   state.container.generateButton.style.display = "none";
   state.container.resetButton.style.display = "flex";
+  state.container.clickToSave.style.display = "flex";
 }
 
 const qrcode = document.getElementById("qrcode");
